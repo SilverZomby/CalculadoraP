@@ -1,34 +1,82 @@
-Nombre del proyecto: Calculadora Básica en Python
-Descripción del proyecto: Se presenta una pantalla que representa una calculadora básica, dicha calculadora tiene los botones de los dígitos del 0 al 9, un botón para el punto “.”, un botón para limpiar la pantalla de la calculadora, y un botón para las operaciones básicas: Suma, Resta, Multiplicación, División, Porcentaje y Raiz cuadrada. 
-Tecnologías usadas: Python, librería tkinter y librería math
-Características principales: Importa la librería tkinter y le da el alias tk para facilitar su uso. Importa la librería math para poder usar la función de raíz cuadrada (math.sqrt). Importa la librería math para poder usar la función de raíz cuadrada (math.sqrt).
-global expresion_actual: Declara una variable global para almacenar la cadena de la operación que el usuario está escribiendo (ej. "15+5").
-def clic_boton(simbolo): Esta función es el corazón de la lógica. Se llama cada vez que se presiona un botón.
-●	eval(): Esta función de Python es muy útil para este tipo de proyectos. Evalúa una cadena de texto como si fuera una expresión matemática y devuelve el resultado. Por ejemplo, eval("10+5") devuelve 15. Es una forma simple y efectiva de resolver las operaciones.
-●	try...except: Es un bloque para manejar errores. Si el usuario ingresa una operación inválida (como "5/0"), el programa no fallará, sino que mostrará "Error" en la pantalla.
+# Calculadora Básica en Python 
 
-Instalación: Opción A – Para ejecutar la aplicación dirígete a la carpeta “dist” y ejecuta el archivo Calculadora.exe
-Opción B – Para abrir el proyecto de Python y manipular el código abrir el archivo main.py en algún editor de código y asegurarse de tener instalado el interprete de Python. 
-Nota: Se incluye guía de pasos para instalar y configurar VS Code (IDE) y Python (interprete) https://rodokizzzdev.com/archivos/Instalación y Config VSCyPython.pdf
-Uso: Al iniciar la ejecución de la calculadora, se da click en un botón digito (1,2,3,4,5,6,7,8,9,0), luego se da click en un botón operador (*,/,-,+,%,sqrt), opcionalmente si se requiere expresar una cifra fraccionaria, dar click en el botón Punto “.”, si es requerido borrar algo que esta en la pantalla de la calculadora dar click en el botón “C”, y si se quiere obtener el resultado de una expresión dar click en el botón igual “=”.
+Esta es una calculadora de escritorio simple desarrollada con Python, que te permite realizar operaciones aritméticas básicas como suma, resta, multiplicación, división, porcentaje y raíz cuadrada.
 
-Contribuciones: 
+---
+
+###  Tecnologías
+
+* **Python**
+* Librería **tkinter** para la interfaz gráfica.
+* Librería **math** para funciones matemáticas.
+
+---
+
+###  Características Principales
+
+* **Librerías:** El proyecto importa `tkinter` (con el alias `tk`) para crear la interfaz gráfica y la librería `math` para utilizar la función de raíz cuadrada (`math.sqrt`).
+* **Variable Global:** La variable `expresion_actual` almacena la cadena de caracteres de la operación que el usuario está construyendo, por ejemplo: `"10+5"`.
+* **Manejo de Lógica:** La función `clic_boton(simbolo)` es el núcleo de la aplicación. Se ejecuta cada vez que se presiona un botón.
+* **Función `eval()`:** Esta función integrada de Python evalúa una cadena de texto como si fuera una expresión matemática, lo que simplifica enormemente la lógica de cálculo. Por ejemplo, `eval("10+5")` retorna `15`.
+* **Manejo de Errores:** Se implementa un bloque `try...except` para capturar y gestionar errores, como la división por cero, lo que previene que la aplicación se cierre inesperadamente y muestra un mensaje de "Error" en pantalla.
+
+---
+
+###  Instalación
+
+#### Opción A: Ejecutable
+
+1.  Dirígete a la carpeta `dist`.
+2.  Ejecuta el archivo `Calculadora.exe`.
+
+#### Opción B: Código Fuente
+
+1.  Asegúrate de tener **Python** instalado en tu sistema.
+2.  Abre el archivo `main.py` en tu editor de código preferido.
+
+**Nota:** Si necesitas ayuda para configurar tu entorno, se incluye una guía para instalar y configurar **VS Code** (IDE) y **Python** (intérprete) [aquí](https://rodokizzzdev.com/archivos/Instalación%20y%20Config%20VSCyPython.pdf).
+
+---
+
+###  Uso
+
+La interfaz de la calculadora es intuitiva. Simplemente haz clic en los botones para construir tu operación:
+1.  Haz clic en los **dígitos** (`0-9`) para escribir un número.
+2.  Haz clic en el **botón de punto** (`.`) para usar decimales.
+3.  Selecciona un **operador** (`+`, `-`, `*`, `/`, `%`, `sqrt`) para realizar una operación.
+4.  Usa el **botón "C"** para limpiar la pantalla.
+5.  Finalmente, presiona el **botón de igual (`=`)** para obtener el resultado.
+
+---
+
+###  Contribuciones
+
 ¡Las contribuciones son bienvenidas! Si deseas ayudar a mejorar este proyecto, por favor sigue los siguientes pasos:
-1.	Haz un fork del repositorio: Crea una copia del repositorio en tu cuenta de GitHub.
-2.	Clona el repositorio: Clona tu fork a tu máquina local.
-Bash
-git clone https://github.com/rodokizzzdev/calculadoraPython.git
-3.	Crea una nueva rama: Trabaja en una rama separada para tus cambios.
-Bash
-git checkout -b nombre-de-tu-rama
-4.	Haz tus cambios y commit: Realiza las modificaciones que consideres necesarias y describe claramente tus cambios.
-Bash
-git add .
-git commit -m "Descripción clara de tus cambios"
-5.	Envía los cambios a tu repositorio: Sube tus cambios a tu fork en GitHub.
-Bash
-git push origin nombre-de-tu-rama	
-6.	Abre un pull request: Desde tu repositorio en GitHub, abre un pull request hacia la rama main del repositorio original. Explica tus cambios y por qué crees que deberían ser integrados.
-Una vez que envíes tu pull request, lo revisaré lo antes posible. ¡Gracias por tu interés en mejorar este proyecto!
 
-Licencia: MIT
+1.  **Haz un *fork*** del repositorio.
+2.  **Clona tu *fork*** a tu máquina local:
+    ```bash
+    git clone [https://github.com/rodokizzzdev/calculadoraPython.git](https://github.com/rodokizzzdev/calculadoraPython.git)
+    ```
+3.  **Crea una nueva rama** para tus cambios:
+    ```bash
+    git checkout -b nombre-de-tu-rama
+    ```
+4.  **Haz tus cambios y haz *commit***:
+    ```bash
+    git add .
+    git commit -m "Descripción clara de tus cambios"
+    ```
+5.  **Envía los cambios** a tu *fork* en GitHub:
+    ```bash
+    git push origin nombre-de-tu-rama
+    ```
+6.  **Abre un *pull request*** hacia la rama `main` del repositorio original, explicando tus cambios.
+
+Revisaré tu *pull request* tan pronto como sea posible. ¡Gracias por tu interés en mejorar este proyecto!
+
+---
+
+###  Licencia
+
+Este proyecto está bajo la Licencia **MIT**.
